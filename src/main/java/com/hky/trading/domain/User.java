@@ -6,13 +6,13 @@ import com.hky.trading.model.TwoFactorAuth;
 import jakarta.persistence.*;
 import lombok.Data;
 
-@Entity
 @Table(name = "user")
+@Entity
 @Data
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private  Long id;
+    private Long id;
 
     private String fullName;
     private String email;
